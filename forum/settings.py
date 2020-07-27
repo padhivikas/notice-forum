@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'i8sx_i^-+(a6_h7h^+4)(s!f(-q2!fi7w7r#!dk1j#b24z^10k'
+SECRET_KEY = 'yoursecuritykey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -130,8 +130,8 @@ ACCOUNT_ACTIVATION_DAYS=3
 LOGIN_REDIRECT_URL='/'
 
 EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='ec.smtp.djangoforum01@gmail.com'
-EMAIL_HOST_PASSWORD='djangoforum01pa55'
+EMAIL_HOST_USER='youremail.com'
+EMAIL_HOST_PASSWORD='yourpassword'
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
 
