@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	
+	
+	<div class="container my-5">
+		
+		{% for notice in notice_list %}
+		<div class="card my-2">
+  			<div class="card-body border">
+  				<a href="{% url 'notice' notice.id %}">
+  					<h5 class="card-title">{{notice.title}}</h5>	
+  				</a>
+    			<span class="mx-2">{{notice.date}}</span>
+    			<span class="mx-2">Branch: {{notice.branch}}</span>
+  			</div>
+		</div>
+		{% endfor %}
+
+
+	</div>
+	
+
+{% endblock %}

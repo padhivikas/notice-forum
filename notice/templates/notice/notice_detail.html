@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	
+	
+	<div class="container my-5">
+		
+		
+		<div class="card my-2">
+  			<div class="card-body border">
+  				<h5 class="card-title">{{notice.title}}</h5>	
+    			<span class="mx-2">{{notice.date}}</span>
+    			<span class="mx-2">Branch: {{notice.branch}}</span>
+    			<hr>
+    			<p>{{notice.description}}</p>
+  			</div>
+		</div>
+		
+	</div>
+	
+
+{% endblock %}
